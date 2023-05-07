@@ -1,4 +1,4 @@
-function FSUImporOptionsData()
+function opts=FSUImporOptionsData()
     % Set up the Import Options and import the data
     opts = delimitedTextImportOptions("NumVariables", 3);
     

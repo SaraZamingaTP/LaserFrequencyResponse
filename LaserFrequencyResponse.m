@@ -137,6 +137,7 @@ function LaserFrequencyResponse( ...
         for FileIndex=length(FileList):-1:1
 
             if isESA % file .DAT 
+                opts=FSUImporOptionsData();
                 TRACE = table2array(readtable(FileList(FileIndex).name, opts));
                 Response = struct('Frequency',[], 'Intensity', []);
             
